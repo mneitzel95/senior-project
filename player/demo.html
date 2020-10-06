@@ -38,7 +38,6 @@
 	<body>
 
 		<div class="reveal">
-
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
@@ -242,20 +241,19 @@
 				<section>
 					<h2>Pretty Code</h2>
 					<pre><code class="hljs" data-trim data-line-numbers="4|9|4,8-11">
-import React, { useState } from 'react';
+                        import React, { useState } from 'react';
+                        function Example() {
+                            const [count, setCount] = useState(0);
 
-function Example() {
-  const [count, setCount] = useState(0);
-
-  return (
-    &lt;div&gt;
-      &lt;p&gt;You clicked {count} times&lt;/p&gt;
-      &lt;button onClick={() =&gt; setCount(count + 1)}&gt;
-        Click me
-      &lt;/button&gt;
-    &lt;/div&gt;
-  );
-}
+                            return (
+                                &lt;div&gt;
+                                &lt;p&gt;You clicked {count} times&lt;/p&gt;
+                                &lt;button onClick={() =&gt; setCount(count + 1)}&gt;
+                                    Click me
+                                &lt;/button&gt;
+                                &lt;/div&gt;
+                            );
+                        }
 					</code></pre>
 					<p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
 				</section>
@@ -359,9 +357,9 @@ function Example() {
 						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
 					</p>
 					<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
-Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
+                        Reveal.addEventListener( 'customevent', function() {
+                            console.log( '"customevent" has fired' );
+                        } );
 					</code></pre>
 				</section>
 
