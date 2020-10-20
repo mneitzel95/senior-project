@@ -21,6 +21,17 @@
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/monokai.css">
 
+		<script>
+  			var recorder = document.getElementById('recorder');
+  			var player = document.getElementById('player');
+
+  			recorder.addEventListener('change', function(e) {
+    			var file = e.target.files[0];
+    			// Do something with the video file.
+    			player.src = URL.createObjectURL(file);
+  			});
+		</script>
+
 		<!-- Printing and PDF exports -->
 		<script>
 			var link = document.createElement( 'link' );

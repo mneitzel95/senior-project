@@ -1,9 +1,75 @@
 <!doctype html>
 <html>
 <head>
+
+	<!-- <input type="file" accept="video/*;capture=camcorder">
+	<input type="file" accept="audio/*;capture=microphone"> -->
+
+	<!-- <device type="media" onchange="update(this.data)"></device>
+	<video autoplay></video>
+	<script>
+  		function update(stream) {
+    		document.querySelector('video').src = stream.url;
+  		}
+	</script>
+
+	<script>
+		function hasGetUserMedia() {
+  			return !!(navigator.mediaDevices && navigator.mediaDevices.getUserMedia);
+		}
+
+		if (hasGetUserMedia()) {
+		// Good to go!
+		} else {
+			alert('getUserMedia() is not supported by your browser');
+		}
+	</script> -->
+
+	<!-- <video autoplay></video>
+
+	<script>
+		const constraints = {
+			video: true
+		};
+		
+		const video = document.querySelector('video');
+
+		navigator.mediaDevices.getUserMedia(constraints).
+		then((stream) => {video.srcObject = stream});
+
+		const hdConstraints = {
+			video: {width: {min: 1280}, height: {min: 720}}
+		};
+
+		navigator.mediaDevices.getUserMedia(hdConstraints).
+		then((stream) => {video.srcObject = stream});
+
+		const vgaConstraints = {
+			video: {width: {exact: 640}, height: {exact: 480}}
+		};
+
+		navigator.mediaDevices.getUserMedia(vgaConstraints).
+		then((stream) => {video.srcObject = stream});
+	</script>
+
+	<script>
+		const hdConstraints = {
+			video: {width: {min: 1280}, height: {min: 720}}
+		};
+
+		navigator.mediaDevices.getUserMedia(hdConstraints).
+		then((stream) => {video.srcObject = stream});
+
+		const vgaConstraints = {
+			video: {width: {exact: 640}, height: {exact: 480}}
+		};
+
+		navigator.mediaDevices.getUserMedia(vgaConstraints).
+		then((stream) => {video.srcObject = stream});
+	</script> -->
 	
-	<input type="file" accept="video/*" capture="camera" id="recorder">
-		<!--<video id="player" controls></video>
+	<!-- <input type="file" accept="video/*" capture="camera" id="recorder"> -->
+		<video id="player" controls></video>
 		<script>
   			var recorder = document.getElementById('recorder');
   			var player = document.getElementById('player');
@@ -13,8 +79,8 @@
     			// Do something with the video file.
     			player.src = URL.createObjectURL(file);
   			});
-		</script>-->
-
+		</script>
+		<!--
 		<video id="player" controls></video>
 		<script>
 			var player = document.getElementById('player');
@@ -57,4 +123,5 @@
 	  		navigator.mediaDevices.getUserMedia({ audio: true, video: true })
 			.then(handleSuccess);
 		</script>
+		-->
 </head>
