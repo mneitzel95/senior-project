@@ -16,6 +16,8 @@
 		<link rel="stylesheet" href="lib/css/monokai.css">
 
 		<script src="/plugin/audio-slideshow/RecordRTC.js"></script>
+
+		<script src="search_function.js"></script>
 		
 		<!-- Printing and PDF exports -->
 		<script>
@@ -91,8 +93,17 @@
          </div> -->
 
         <!-- Creates a search box -->
-        <input type="text" placeholder="Search.." name="search">
-		<input type="submit"><i class="fa fa-search"></i>
+        <!-- <input type="text" placeholder="Search.." name="search">
+		<input type="submit"><i class="fa fa-search"></i> -->
+
+		<form id="searchForm" action="javascript:search();">
+			<div class="input-group">
+			   <button id="go" class="btn btn-default" type="button" 
+					   onclick="document.getElementById('searchForm').submit(); return false;">
+			   </button>
+			   <input type="text" id="searchItem" class="form-control" placeholder="Suchbegriff">
+			</div>
+		 </form>
 		
 		<!-- <input type="file" accept="video/*" capture> -->
         
