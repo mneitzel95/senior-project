@@ -16,6 +16,16 @@
 		<link rel="stylesheet" href="lib/css/monokai.css">
 
 		<script src="/plugin/audio-slideshow/RecordRTC.js"></script>
+
+		<!-- <style>
+			body {
+			  background-image: url('CSU.jpg');
+			  background-repeat: no-repeat;
+			  background-attachment: fixed;
+			  background-position: center;
+			  background-size: cover;
+			}
+		</style> -->
 		
 		<!-- Printing and PDF exports -->
 		<script>
@@ -32,6 +42,12 @@
             body {
               margin: 0;
               font-family: Arial, Helvetica, sans-serif;
+			  /* background-image: url('CSU.jpg'); */
+			  background-image: url('CSU_Logo.jpeg');
+			  background-repeat: no-repeat;
+			  background-attachment: fixed;
+			  background-position: center;
+			  background-size: contain;
             }
             
             .topnav {
@@ -91,7 +107,7 @@
 		        
         <div class="reveal">
 			<div class="slides">
-                <section>
+				<section>
 					<h2 style ="color:#D4AF37;">"Video" Slideshow Presentation Player</h2>
 					<!-- <h3>The HTML Presentation Framework</h3> -->
 					<p style="color: blue;">
@@ -149,7 +165,15 @@
 				
 				<section>
 					<h2>Project Implementation Description & Explanation</h2>
-					<p style="text-align: left;">
+					<p style="text-align: left; font-size: 25px">
+						People want to interact with the content of a recorded video presentation more directly if the recording 
+						included the semantic structure of the content rather than just raster images.  For example, viewers may copy 
+						and paste the text from the slides, clicking on links, giving feedback, and jumping to logical segments.  By 
+						creating a system to record and playback video-like content and audio playback with the semantic meaning intact 
+						via HTML will meet this need.  The implementation will include adding features to a recorded video presentation 
+						with audio playback such as copy and paste text from the slides, clicking on links, giving feedback, and jumping 
+						to logical segments.  The video presentation is going to record audio and video for later playback with the use 
+						of Storyteller and the audio-slideshow reveal.js plugin by rajgoel on GitHub. <br>
 						- <a href="https://github.com/mneitzel95/senior-project">Source Code Repository</a>
 					</p>
 					
@@ -172,14 +196,22 @@
 				<section>
 					<h2>Challanges Overcome</h2>
 					<p style="text-align: left; font-size: 25px">
-						Hello!
+						- Was able to get the audio recorder to work with the presentation. <br>
+						- Was able to get 
 					</p>
 				</section>
 				
 				<section>
 					<h2>Future Enhancements</h2>
 					<p style="text-align: left; font-size: 25px">
-						- Add a video recorder where it records the prensenter's screen and shows an embedded video of the presenter.
+						- Add a video recorder where it records the prensenter's screen and shows an embedded video of the presenter 
+						while they are actively presenting their presentation. <br>
+						<br>
+						- Get the search function to actually search for a given word and locate it within the presentation. <br>
+						<br>
+						- Get the presenter feedback function to actually submit to the presenter through their preferred method 
+						of contact for later review. <br>
+						<br>
 					</p>
                 </section>
                 
