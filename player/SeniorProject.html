@@ -89,7 +89,32 @@
               .topnav input[type=text] {
                 border: 1px solid #ccc;  
               }
-            }
+			}
+
+			pre {
+				background-color: #ffffff;
+				border: 1px solid #898989;
+				padding: 5px;
+				overflow: scroll;
+			}
+			
+			/* pre {
+				background: #f4f4f4;
+				text-align: left;
+				border: 0px solid #ddd;
+				border-left: 3px solid #f2334c;
+				color: #666;
+				page-break-inside: avoid;
+				font-family: monospace;
+				font-size: 15px;
+				line-height: 1.6;
+				margin-bottom: 1.6em;
+				max-width: 100%;
+				overflow: auto;
+				padding: 1em 1.5em;
+				display: block;
+				word-wrap: break-word;
+			} */
         </style>
 	</head>
 	<body>
@@ -143,21 +168,6 @@
 								be able to design a way for people to be able to review the notes as they were presented in the slides 
 								by being able to copy and paste the exact text from the slides into their own notes.
 							</p>
-						<!-- <p>
-							If there was a program that allows people to highlight specific text from a video slide presentation, 
-							they would be able to use that text in their own notes so that they can view them later on.  People want 
-							to interact with the content of a video presentation more directly by creating a system to record and 
-							playback video-like content with the semantic meaning intact via HTML will meet this need.  Ideally, users 
-							will be able to interact with the content of a “video” presentation by copying text, clicking on links, 
-							and answer prompts for information (e.g., questions check understanding).  However, the semantic meaning 
-							and structure of content is lost during the usual video recording process, which only captures a sequence 
-							of images.  The demand for these features in education is apparent based on decisions with fellow students 
-							and teachers.  YouTube provides partial support for these features through “cards”, captions, and 
-							description links, which indicates that these features are helpful.  With the use of Reveal.js, Visual 
-							Studio Code, and VS Code storyteller by markm208 on GitHub, I will be able to design a way for people to 
-							be able to review the notes as they were presented in the slides by being able to copy and paste the exact 
-							text from the slides into their own notes.
-						</p> -->
 					</section>
 				</section>
 				
@@ -165,30 +175,58 @@
 					<section>
 						<h2 style ="color:#D4AF37;">Research & Background</h2>
 					</section>
-					<section id="fragments">
+					<section>
 						<h2 style ="color:#D4AF37;">Research & Background</h2>
-						<p style="color: blue; text-align: left; font-size: 25px">
-							- I will complete my project by doing some research on how to use Reveal.js and all of the features that it 
-							involves and how to use the Visual Studio Code Storyteller Plugin and all of the features that are involved 
-							with it.
-						</p>
-						<p style="color: blue; text-align: left; font-size: 25px" class="fragment">
-							- One way that I can accomplish this is by using the Chronicler extension in Visual Studio Code.
-						</p>
-						<p style="color: blue; text-align: left; font-size: 25px" class="fragment">
-							- Another way that I can accomplish this is by possibly using Audacity and importing the recorded audio 
-							file into the Storyteller file.
-						</p>
-						<!-- <p style="color: blue; text-align: left; font-size: 25px">
-							I will complete my project by doing some research on how to use Reveal.js and all of the features that it 
-							involves and how to use the Visual Studio Code Storyteller Plugin and all of the features that are involved 
-							with it.  Another feature that I need to do some research on is identifying ways to add audio to a 
-							Storyteller file in Visual Studio Code.  One way that I can accomplish this is by using the Chronicler 
-							extension in Visual Studio Code.  Another way that I can accomplish this is by possibly using Audacity 
-							and importing the recorded audio file into the Storyteller file.
-						</p> -->
+						<section>
+							<h3 style="color: blue; text-align: left; font-size: 35px">Research</h3>
+							<p style="color:#D4AF37; text-align: left; font-size: 25px">
+								- I will complete my project by doing some research on how to use Reveal.js and all of the features 
+								that it involves and how to use the Visual Studio Code Storyteller Plugin and all of the features that 
+								are involved with it.
+							</p>
+							<p style="color:#D4AF37; text-align: left; font-size: 25px" class="fragment">
+								- One way that I can accomplish this is by using the Chronicler extension in Visual Studio Code.
+							</p>
+							<p style="color:#D4AF37; text-align: left; font-size: 25px" class="fragment">
+								- Another way that I can accomplish this is by possibly using Audacity and importing the recorded 
+								audio file into the Storyteller file.
+							</p>
+						</section>
 					</section>
 				</section>
+
+				<!-- <section>
+					<section>
+						<h2 style ="color:#D4AF37;">Research & Background (Cont'd)</h2>
+					</section>
+					<section id="fragments">
+						<h2 style ="color:#D4AF37;">Research & Background (Cont'd)</h2>
+						<section>
+							<h3 style="color: blue; text-align: left; font-size: 35px">Background</h3>
+							<p style="color:#D4AF37; text-align: left; font-size: 20px">
+								- People want to interact with the content of a recorded video presentation more directly if the 
+								recording included the semantic structure of the content rather than just raster images.
+							</p>
+							<p style="color:#D4AF37; text-align: left; font-size: 20px" class="fragment">
+								- For example, viewers may copy and paste the text from the slides, clicking on links, giving feedback, 
+								and jumping to logical segments.
+							</p>
+							<p style="color:#D4AF37; text-align: left; font-size: 20px" class="fragment">
+								- By creating a system to record and playback video-like content and audio playback with the semantic 
+								meaning intact via HTML will meet this need.
+							</p>
+							<p style="color:#D4AF37; text-align: left; font-size: 20px" class="fragment">
+								- The implementation will include adding features to a recorded video presentation with audio playback 
+								such as copy and paste text from the slides, clicking on links, giving feedback, and jumping to 
+								logical segments.
+							</p>
+							<p style="color:#D4AF37; text-align: left; font-size: 20px" class="fragment">
+								- The video presentation is going to record audio and video for later playback with the use of the 
+								audio-slideshow reveal.js plugin by rajgoel on GitHub.
+							</p>
+						</section>
+					</section>
+				</section> -->
 				
 				<section>
 					<section>
@@ -269,6 +307,62 @@
 					</section>
 					<section>
 						<h2 style ="color:#D4AF37;">Project Implementation Description & Explanation (Cont'd)</h2>
+						<section id="fragments">
+							<h3 style="color: blue; text-align: left; font-size: 35px">How to Create an HTML Slideshow</h3>
+							<p style="color:#D4AF37; text-align: left; font-size: 20px">
+								- How to Create an HTML Slide
+							</p>
+						</section>
+						<p style="color:#D4AF37; text-align: left; font-size: 20px" class="fragment">
+							- For example, viewers may copy and paste the text from the slides, click on links, give feedback, 
+							and jump to logical segments.
+						</p>
+					</section>
+				</section>
+
+				<section>
+					<pre>
+						<code>
+							&lt;!doctype html&gt;
+							&lt;html lang="en-US"&gt;
+							&lt;head&gt;
+								&lt;meta charset="utf-8"&gt;                
+								&lt;meta name="generator" content="JSFiddle"&gt;
+								&lt;/body&gt;
+								&lt;meta name="description" content="Displaying your source code on web page."&gt;
+								&lt;meta name="author" content="Anna Medvedeva"&gt;
+							&lt;/head&gt;
+							&lt;body&gt;
+								&lt;h1&gt;Displaying your source code on web page&lt;/h1&gt;
+								&lt;p1&gt;Do you read, write and speak code? Learn how to share your skills!&lt;/p&gt;
+							&lt;/body&gt;
+							&lt;/html&gt;
+						</code>
+						</pre>
+					<!-- <pre>
+						&lt;!doctype html&gt;
+						&lt;html lang="en-US"&gt;
+						&lt;head&gt;
+							&lt;meta charset="utf-8"&gt;                
+							&lt;meta name="generator" content="JSFiddle"&gt;
+							&lt;/body&gt;
+							&lt;meta name="description" content="Displaying your source code on web page."&gt;
+							&lt;meta name="author" content="Anna Medvedeva"&gt;
+						&lt;/head&gt;
+						&lt;body&gt;
+							&lt;h1&gt;Displaying your source code on web page&lt;/h1&gt;
+							&lt;p1&gt;Do you read, write and speak code? Learn how to share your skills!&lt;/p&gt;
+						&lt;/body&gt;
+						&lt;/html&gt;
+					 </pre> -->
+				</section>
+
+				<section>
+					<section>
+						<h2 style ="color:#D4AF37;">Project Implementation Description & Explanation (Cont'd)</h2>
+					</section>
+					<section>
+						<h2 style ="color:#D4AF37;">Project Implementation Description & Explanation (Cont'd)</h2>
 						<section>
 							<h3 style="color: blue; text-align: left;">Source Code Repository</h2>  
 							<p style="color:blue; text-align: left;">
@@ -296,8 +390,8 @@
 					</section>
 					<section>
 						<h2 style ="color:#D4AF37;">Test Results</h2>
-						<p style="color: blue; text-align: left; font-size: 25px">
-							Test Results
+						<p style="color: blue; text-align: left;">
+							- <a href="https://github.com/mneitzel95/mneitzel95.github.io/blob/master/Documents/Test%20Results.md">Test Results</a>
 						</p>
 					</section>
 				</section>
@@ -316,6 +410,9 @@
 						</p>
 						<p style="color: blue; text-align: left; font-size: 25px" class="fragment">
 							- Was able to get the dependecies corrected within my GitHub repository.
+						</p>
+						<p style="color: blue; text-align: left; font-size: 25px" class="fragment">
+							- Was able to get the audio recording to download as a zip file with a .webm file extension.
 						</p>
 					</section>
 				</section>
@@ -337,10 +434,14 @@
 							- Get the presenter feedback function to actually submit to the presenter through their preferred method 
 							of contact for later review.
 						</p>
+						<p style="color: blue; text-align: left; font-size: 25px" class="fragment">
+							- Get the .webm file extension to export to a .wav file extension.
+						</p>
 					</section>
 				</section>
 
-				<section style="text-align: left;">
+				<!-- <section style="text-align: left;"> -->
+				<section>
 					<h1 style ="color:#D4AF37;">THE END</h1>
 					<p style="color: blue; text-align: left; font-size: 25px">
 						- THANK YOU! <br>
