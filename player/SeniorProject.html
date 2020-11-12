@@ -90,18 +90,10 @@
                 border: 1px solid #ccc;  
               }
 			}
-
-			pre {
-				background-color: #ffffff;
-				border: 1px solid #898989;
-				padding: 5px;
-				overflow: scroll;
-			}
 			
-			/* pre {
+			pre {
 				background: #f4f4f4;
-				text-align: left;
-				border: 0px solid #ddd;
+				border: 1px solid #ddd;
 				border-left: 3px solid #f2334c;
 				color: #666;
 				page-break-inside: avoid;
@@ -114,7 +106,7 @@
 				padding: 1em 1.5em;
 				display: block;
 				word-wrap: break-word;
-			} */
+			}
         </style>
 	</head>
 	<body>
@@ -308,15 +300,26 @@
 					<section>
 						<h2 style ="color:#D4AF37;">Project Implementation Description & Explanation (Cont'd)</h2>
 						<section id="fragments">
-							<h3 style="color: blue; text-align: left; font-size: 35px">How to Create an HTML Slideshow</h3>
-							<p style="color:#D4AF37; text-align: left; font-size: 20px">
-								- How to Create an HTML Slide
-							</p>
+							<h3 style="color: blue; text-align: left; font-size: 35px">How to Create an HTML Slide</h3>
+							<pre>
+								<code>
+									&lt;!doctype html&gt;
+									&lt;html lang="en-US"&gt;
+									&lt;head&gt;
+										&lt;meta charset="utf-8"&gt;                
+										&lt;meta name="generator" content="JSFiddle"&gt;
+										&lt;/body&gt;
+										&lt;meta name="description" content="Displaying your source code on web page."&gt;
+										&lt;meta name="author" content="Anna Medvedeva"&gt;
+									&lt;/head&gt;
+									&lt;body&gt;
+										&lt;h1&gt;Displaying your source code on web page&lt;/h1&gt;
+										&lt;p1&gt;Do you read, write and speak code? Learn how to share your skills!&lt;/p&gt;
+									&lt;/body&gt;
+									&lt;/html&gt;
+								</code>
+							</pre>
 						</section>
-						<p style="color:#D4AF37; text-align: left; font-size: 20px" class="fragment">
-							- For example, viewers may copy and paste the text from the slides, click on links, give feedback, 
-							and jump to logical segments.
-						</p>
 					</section>
 				</section>
 
@@ -338,7 +341,7 @@
 							&lt;/body&gt;
 							&lt;/html&gt;
 						</code>
-						</pre>
+					</pre>
 					<!-- <pre>
 						&lt;!doctype html&gt;
 						&lt;html lang="en-US"&gt;
