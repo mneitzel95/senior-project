@@ -21,6 +21,8 @@
 		<script src="/plugin/audio-slideshow/RecordRTC.js"></script>
 		<script src="/plugin/audio-slideshow/audio-slideshow.js"></script>
 		<script src="/plugin/audio-slideshow/slideshow-recorder.js"></script>
+
+		<script src="search.js"></script>
 		
 		<!-- Printing and PDF exports -->
 		<script>
@@ -29,7 +31,30 @@
 			link.type = 'text/css';
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
+		</script>	
+
+		<!-- <script>
+			function doSearch(text) {
+				if (window.find && window.getSelection) {
+					document.designMode = "on";
+					var sel = window.getSelection();
+					sel.collapse(document.body, 0);
+					
+					while (window.find(text)) {
+						document.getElementById("button").blur();
+						document.execCommand("HiliteColor", false, "yellow");
+						sel.collapseToEnd();
+					}
+					document.designMode = "off";
+				} else if (document.body.createTextRange) {
+					var textRange = document.body.createTextRange();
+					while (textRange.findText(text)) {
+						textRange.execCommand("BackColor", false, "yellow");
+						textRange.collapse(false);
+					}
+				}
+			}
+		</script> -->
         
         <style>
             * {box-sizing: border-box;}
@@ -113,12 +138,26 @@
 	</head>
 	<body>
         <!-- Creates a search box -->
-        <input type="text" placeholder="Search.." name="search">
+        <!-- <input type="text" placeholder="Search.." name="search"> -->
 		<!-- <input type="submit"><i class="fa fa-search"></i> -->
-		<input type="submit">
+		<!-- <input type="submit"> -->
+
+		<!-- <input type="text" id="search">
+		<input type="button" id="button" onmousedown="doSearch(document.getElementById('search').value)" value="Find"> -->
+
+		<!-- <input type="text" id="search">
+		<input type="button" id="button" onmousedown="findString(document.getElementById('search').value)" value="Find"> -->
+
+		<div class="header">
+			Search:
+			<input type="search" placeholder="Lorem">
+			<button data-search="next">&darr;</button>
+			<button data-search="prev">&uarr;</button>
+			<button data-search="clear">✖</button>
+		  </div>
 		
-        <div class="reveal">
-			<div class="slides">
+        <div class="reveal" id="content">
+			<div class="slides" id="content">
 				<section data-transition="convex" data-audio-src="audio/0.0.webm;codecs=opus">
 					<!-- <video data-autoplay src="audio/0.0.webm;codecs=opus"></video> -->
 					<h2 style ="color:#D4AF37;">"Video" Slideshow Presentation Player</h2>
