@@ -1,3 +1,5 @@
+Reveal.slide(indexh, indexv, indexf);
+
 function doSearch(text) {
     if (window.find && window.getSelection) {
         document.designMode = "on";

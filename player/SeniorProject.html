@@ -21,8 +21,9 @@
 		<script src="/plugin/audio-slideshow/RecordRTC.js"></script>
 		<script src="/plugin/audio-slideshow/audio-slideshow.js"></script>
 		<script src="/plugin/audio-slideshow/slideshow-recorder.js"></script>
+		<!-- <script src="/plugin/search/search.js"></script> -->
 
-		<script src="search.js"></script>
+		<!-- <script src="search.js"></script> -->
 		
 		<!-- Printing and PDF exports -->
 		<script>
@@ -31,30 +32,11 @@
 			link.type = 'text/css';
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>	
+		</script>
 
-		<!-- <script>
-			function doSearch(text) {
-				if (window.find && window.getSelection) {
-					document.designMode = "on";
-					var sel = window.getSelection();
-					sel.collapse(document.body, 0);
-					
-					while (window.find(text)) {
-						document.getElementById("button").blur();
-						document.execCommand("HiliteColor", false, "yellow");
-						sel.collapseToEnd();
-					}
-					document.designMode = "off";
-				} else if (document.body.createTextRange) {
-					var textRange = document.body.createTextRange();
-					while (textRange.findText(text)) {
-						textRange.execCommand("BackColor", false, "yellow");
-						textRange.collapse(false);
-					}
-				}
-			}
-		</script> -->
+		<script>
+			Reveal.slide(indexh, indexv, indexf);
+		</script>
         
         <style>
             * {box-sizing: border-box;}
@@ -461,7 +443,8 @@
 					{ src: 'plugin/audio-slideshow/RecordRTC.js', condition: function( ) { return !!document.body.classList; } },				
 					{ src: 'plugin/audio-slideshow/slideshow-recorder.js', condition: function( ) { return !!document.body.classList; } },				
 					{ src: 'plugin/audio-slideshow/audio-slideshow.js', condition: function( ) { return !!document.body.classList; } },
-					{ src: 'plugin/notes/notes.js', async: true }
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/search/search.js' }
 				],
 
 				audio: {
