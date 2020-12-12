@@ -26,16 +26,12 @@
 		<!-- <script src="search.js"></script> -->
 		
 		<!-- Printing and PDF exports -->
-		<script>
+		<!-- <script>
 			var link = document.createElement( 'link' );
 			link.rel = 'stylesheet';
 			link.type = 'text/css';
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-
-		<!-- <script>
-			Reveal.slide(indexh, indexv, indexf);
 		</script> -->
         
         <style>
@@ -444,7 +440,7 @@
 					{ src: 'plugin/audio-slideshow/slideshow-recorder.js', condition: function( ) { return !!document.body.classList; } },				
 					{ src: 'plugin/audio-slideshow/audio-slideshow.js', condition: function( ) { return !!document.body.classList; } },
 					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/search/search.js' }
+					{ src: 'plugin/search/search.js', async: true }
 				],
 
 				audio: {
